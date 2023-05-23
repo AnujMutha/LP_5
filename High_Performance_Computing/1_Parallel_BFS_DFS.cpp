@@ -139,3 +139,28 @@ int main() {
  
     return 0;
 }
+
+
+
+
+/*
+
+Enter the value for the current node: 1
+Do you want to add a left child to the node with value 1? (y/n): y
+Enter the value for the current node: 2
+Do you want to add a left child to the node with value 2? (y/n): y
+Do you want to add a left child to the node with value 7? (y/n): n
+Do you want to add a right child to the node with value 7? (y/n): n
+BFS traversal: 1 2 3 4 5 6 7
+BFS took 39304 microseconds.
+
+Parallel BFS traversal: 1 2 3 4 5 6 7
+Parallel BFS took 49793 microseconds.
+---------------------------------------------------------
+DFS traversal: 1 2 4 5 3 6 7
+DFS took 1994 microseconds.
+
+Parallel DFS traversal: 1 2 4 5 3 6 7
+Parallel DFS took 1997 microseconds.
+
+*/

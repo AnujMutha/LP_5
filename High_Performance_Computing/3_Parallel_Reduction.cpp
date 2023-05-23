@@ -114,3 +114,25 @@ int main() {
     average(array);
     return 0;
 }
+
+/*
+
+Enter number of elements in array: 30
+Minimum Element: 41
+Time Taken: 0
+Minimum Element(Parallel Reduction): 41
+Time Taken: 0.00100017
+Maximum Element: 995
+Time Taken: 0
+Maximum Element(Parallel Reduction): 995
+Time Taken: 0
+Summation: 16581
+Time Taken: 0
+Summation(Parallel Reduction): 16581
+Time Taken: 0
+Average: 552.7
+Time Taken: 0
+Average(Parallel Reduction): 552.7
+Time Taken: 0.00100017
+
+*/
