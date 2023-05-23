@@ -1,8 +1,10 @@
 %%cu
+// WARNING: DO NOT COPY THIS CODE, INSTEAD DOWNLOAD IT TO AVOID ERRORS.
 #include <iostream>
 using namespace std;
 
-__global__ void add(int* A, int* B, int* C, int size) {
+__global__
+void add(int* A, int* B, int* C, int size) {
     int tid = blockIdx.x * blockDim.x + threadIdx.x;
 
     if (tid < size) {

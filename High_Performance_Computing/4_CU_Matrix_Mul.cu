@@ -1,10 +1,12 @@
+%%cu
+// WARNING: DO NOT COPY THIS CODE, INSTEAD DOWNLOAD IT TO AVOID ERRORS.
 #include <iostream>
 using namespace std;
 
 
 // CUDA code to multiply matrices
 __global__ void multiply(int* A, int* B, int* C, int size) {
-    // Uses thread indices and block indices to compute each element
+    // Uses thread idices and block indices to compute each element
     int row = blockIdx.y * blockDim.y + threadIdx.y;
     int col = blockIdx.x * blockDim.x + threadIdx.x;
 
