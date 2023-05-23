@@ -65,10 +65,10 @@ void sum(vector<int> array) {
     double end = omp_get_wtime();
     cout << "Summation: " << sum << endl;
     cout << "Time Taken: " << (end - start) << endl;
-    
+
     sum = 0;
     start = omp_get_wtime();
-#pragma omp parallel for reduction(+: sum)
+    #pragma omp parallel for reduction(+: sum)
     for (int i = 0; i < array.size(); i++) {
         sum += array[i];
     }
